@@ -5,20 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="./css/main-styling.css">
 </head>
 <body>
-    <h1>My Contact Details</h1>
-    <p>My fictional address</p>
-    <p>01146876321</p>
-    <p>mydisplay email@gmail.com</p>
-    <hr size="3px" noshade>
-    <form action="mailto:myemail@gmail.com">
-        <input type="date" name="date" id="date" required><br><br>
-        <label for="your name">Your Name:</label>
-        <input type="text" name="your name" id="your name" required><br><br>
-        <label for="your email">Your Email:</label>
-        <input type="email" name="your email" id="your email" required><br><br>
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Comment"></textarea>
+    <div class="itachiInfo">
+        <h1 id="contactHeading">My Contact Details</h1>
+        <p>My fictional address</p>
+        <p><em>01146876321</em></p>
+        <p>displayemail<b>@gmail.com</b></p>
+    </div>
+        <hr size="3px" noshade>
+    <br>
+    <form action="mailto:myemail@gmail.com">  
+        <!-- nested input inside label -->
+       <div>
+        <table cellspacing="10px">
+            <tr>
+                <td>
+                    <label for="date"><b>Date:</b></label>
+                </td>
+                <td>
+                    <input type="date" name="date" id="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="your name"><b>Your Name:</b></label>
+                </td>
+                <td>
+                    <input type="text" name="user's name" id="your name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="your email"><b>Your Email:</b></label>
+                </td>
+                <td>
+                    <input type="text" name="user's email" id="your email">
+                </td>
+            </tr>
+        </table>
+        <br>
+       </div>
+        <br>
+
+        <!-- conventional way of label then input element -->
+
+        <!-- <label for="your email"><b>Your Email:</b></label>
+        <input type="email" name="your email" id="your email" required> -->
+
+        <textarea name="comments" id="comments" cols="35" rows="8" placeholder="Your Comment"></textarea>
         <br>
         <input type="submit" value="Submit">
     </form>
@@ -33,6 +69,7 @@
     <br>
     <br>
     <br>
+
     <a href="./index.html">Back to Homepage</a>
 
     
