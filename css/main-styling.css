@@ -1,0 +1,17 @@
+#contactHeading{
+    text-transform:uppercase;
+}
+.itachiInfo{
+    object-position: center;
+}
+
+
+#profPic{
+    image-resolution: 100%;
+}
+.voiceActorList{
+
+    background-color: darkorange;
+    border:thick;
+    border-color: black;
+}
